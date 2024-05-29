@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carso - Second Hand Car Prices</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #ff9800;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            padding: 100px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            color: #ffffff;
+        }
+
+        #hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: slideInDown 1s ease-in-out;
+        }
+
+        #hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        .btn {
+            background-color: #ff9800;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Carso</h1>
+            <nav>
+                <ul>
+                    <li><a href="#know-your-car-price">Know Your Car Price</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Find the Best Prices for Second-Hand Cars</h2>
+                <p>Quickly and easily get accurate car price estimates.</p>
+                <a href="#know-your-car-price" class="btn">Get Started</a>
+            </div>
+        </section>
+        <section id="know-your-car-price">
+            <div class="container">
+                <h2>Know Your Car Price</h2>
+                <p>Enter your car details to get the best price estimate.</p>
+                <a href="#" class="btn">Check Now</a>
+            </div>
+        </section>
+        <section id="contact-us">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions? Get in touch with us!</p>
+                <a href="#" class="btn">Contact Now</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Carso. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
